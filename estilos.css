@@ -1,0 +1,439 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.5em;
+}
+
+/* #fondoseccion{
+    background: rgb(44, 22, 22);
+background: linear-gradient(540deg, rgb(253, 251, 251) 67%, rgba(121,9,9,1) 100%);
+}
+
+footer{
+background-color: #000000;
+    height: 10vh;
+
+}
+footer>div{
+    padding-top: 2em;
+
+} 
+article > figure > img {
+  width: 300px;
+  height: auto;
+}
+
+fieldset {
+  border: none;
+}
+
+.footercontacto {
+  margin-top: 15em;
+}
+
+/* CONTACTO */
+.wrapper {
+  margin-top: 5em;
+  margin-left: 3em;
+  height: 400px;
+  width: 500px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 1em;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-box {
+  position: relative;
+  width: 14em;
+  border-bottom: 2px solid rgba(34, 16, 16, 0.5);
+  margin: 30px 0;
+}
+
+.input-box label {
+  position: absolute;
+  top: 10%;
+  left: 4px;
+  transform: translate(-50%);
+  font-size: 1em;
+  color: #ffffff;
+  pointer-events: none;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 1px;
+  font-size: 1.2em;
+  color: #ffffff;
+  line-height: 57px;
+}
+
+.btn {
+  background-color: rgb(255, 255, 255);
+  float: right;
+  border-radius: 1em;
+  padding: 0.5em;
+}
+
+@media screen and (max-width: 1000px) {
+  .wrapper, .input-box, .input-box .icon, .input-box input, .btn, .input-box label {
+    width: 100%;
+    text-align: center;
+    margin: 0%;
+    border-radius: 0;
+    margin-top: 1em;
+  }
+}
+/* FONDO CONTACTO */
+.back {
+  background: url(../img/pesafondocontacto.jpg);
+}
+
+.col-sm-3 {
+  text-decoration: none;
+}
+
+.col-6 {
+  margin: 1em;
+}
+
+ul {
+  list-style: none;
+  /* background-color: #000000; */
+  align-items: center;
+  justify-content: space-around;
+}
+
+li {
+  border: solid rgb(25, 23, 109);
+  border-radius: 1em;
+  text-align: center;
+}
+
+li > a {
+  text-decoration: none;
+}
+
+/* Alimentacion GRIDS */
+.galeria {
+  width: 100%;
+  min-height: 500px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(6, 200px);
+  padding: 20px;
+  grid-gap: 15px;
+}
+
+.item {
+  border: 3px solid black;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.5em;
+}
+
+.item1 {
+  background-image: url(../img/channa-166896_1920.jpg);
+  /* grid-column: 1/2;
+  grid-row: 1/5; */
+}
+
+.item2 {
+  background-image: url(../img/noodles-516635_1920.jpg);
+  /* grid-column: 2/3;
+  grid-row: 1/3; */
+}
+
+.item3 {
+  background-image: url(../img/vegetables-1584999_1920.jpg);
+  /* grid-column: 3/5;
+  grid-row: 1/2; */
+}
+
+.item4 {
+  background-image: url(../img/eggs-944495_1920.jpg);
+  /* grid-column: 3/5;
+  grid-row: 2/4; */
+}
+
+.item5 {
+  background-image: url(../img/avocado-3210885_1920.jpg);
+  /* grid-column: 2/3;
+  grid-row: 3/5; */
+}
+
+.item6 {
+  background-image: url(../img/hors-doeuvre-2175326_1920.jpg);
+  /* grid-column: 3/5;
+  grid-row: 4/5;  */
+}
+
+@media only screen and (min-width: 480px) {
+  .galeria {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 200px);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .galeria {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .item1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .item2 {
+    grid-column: 3/4;
+    grid-row: 1/3;
+  }
+  .item3 {
+    grid-column: 1/2;
+    grid-row: 2/4;
+  }
+  .item4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .item5 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .item6 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .galeria {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 800px;
+  }
+  .item1 {
+    grid-column: 1/2;
+    grid-row: 1/5;
+  }
+  .item2 {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+  .item3 {
+    grid-column: 3/5;
+    grid-row: 1/2;
+  }
+  .item4 {
+    grid-column: 3/5;
+    grid-row: 2/4;
+  }
+  .item5 {
+    grid-column: 2/3;
+    grid-row: 3/5;
+  }
+  .item6 {
+    grid-column: 3/5;
+    grid-row: 4/5;
+  }
+}
+.item:hover {
+  box-shadow: 0 0 5px 5px #33359e;
+  transform: scale(1.08);
+  transition: all 1.1s;
+}
+
+/* .item:hover {
+    box-shadow: 0 0 5px 5px #33359e;
+    transform: scale(1.18);
+    transition: all 1.1s;
+} */
+/* FONDO ALMENTACION */
+.fondoalimentacion {
+  background-image: url(../img/FondoAlimentacion.jpg);
+  background-size: cover;
+}
+
+/* FONDO SUPLEMENTACIOn */
+.fondosuple {
+  background-image: url(../img/sport-1244925_1280.jpg);
+  background-size: cover;
+}
+
+/* SUPLEMENTACION */
+.imgtamano {
+  display: flex;
+  align-items: center;
+  margin-left: 2em;
+}
+
+.imgtamano2 {
+  display: flex;
+  align-items: center;
+  margin-left: 2em;
+}
+
+.imgtamano3 {
+  display: flex;
+  align-items: center;
+  margin-left: 2em;
+}
+
+.pa {
+  background-color: rgb(17, 1, 1);
+  border-color: #929269;
+  border-bottom: solid rgb(25, 23, 109);
+  border-radius: 1em;
+  padding: 0.5em;
+  margin-left: 3em;
+  margin-right: 9em;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  backdrop-filter: contrast(40%);
+}
+
+.titlesuple {
+  /* background-color: rgb(15, 15, 0); */
+  text-align: center;
+  margin: 2em;
+  border: solid black;
+  box-shadow: 1px 1px 9px 1px rgb(25, 23, 109);
+  border-radius: 2em;
+  padding: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .imgtamano, .imgtamano2, .imgtamano3, .pa {
+    flex-direction: column;
+  }
+  .imgtamano .pa, .imgtamano2 .pa, .imgtamano3 .pa, .pa .pa {
+    display: flex;
+    width: 70%;
+  }
+  #imggaleria {
+    display: none;
+  }
+}
+/* iNICIO */
+.Arnoldsas {
+  display: none;
+}
+
+.galeriah {
+  display: flex;
+  margin-left: 2em;
+}
+
+.primero {
+  /* background-color: #fffdfd; */
+  margin: 2em;
+  text-align: center;
+}
+
+.segundo {
+  margin: 2em;
+  width: 13em;
+  border: solid black;
+  text-align: center;
+  padding: 1em;
+}
+
+/* INICIO GALERIA */
+.inicio {
+  display: flex;
+  width: 900px;
+  height: 600px;
+}
+
+.inicio img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+
+.inicio img:hover {
+  cursor: crosshair;
+  width: 400px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+/* FONDOINICIO */
+/* RUTINA */
+.titlerutina {
+  text-align: center;
+  margin: 2em;
+  border: solid rgb(0, 0, 0);
+  box-shadow: 1px 1px 9px 1px rgb(25, 23, 109);
+  border-radius: 2em;
+  padding: 20px;
+}
+
+.v1 {
+  display: flex;
+  margin-left: 2em;
+}
+
+.heavy {
+  border: solid rgb(0, 0, 0) 0.3em;
+}
+
+.pr1 {
+  background-color: rgb(3, 0, 0);
+  border-color: #929269;
+  border-bottom: solid rgb(25, 23, 109);
+  border-radius: 1em;
+  padding: 0.5em;
+  margin: 2em;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  backdrop-filter: contrast(40%);
+}
+
+.v2 {
+  display: flex;
+  margin-right: 2em;
+}
+
+.pr2 {
+  background-color: rgb(17, 1, 1);
+  border-color: #929269;
+  border-bottom: solid rgb(25, 23, 109);
+  border-radius: 1em;
+  padding: 0.5em;
+  margin: 2em;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  backdrop-filter: contrast(40%);
+}
+
+@media screen and (max-width: 1000px) {
+  .pr1, .pr2, .v1, .v2, .heavy {
+    flex-direction: column;
+  }
+  .v2 {
+    margin-left: 2em;
+  }
+}
+/* FONDORUTINA */
+.fondorutina {
+  background-color: #020413;
+  background-image: url(../img/sport-2726736_1920.jpg);
+  background-size: cover;
+}
+
+/*# sourceMappingURL=estilos.css.map */
