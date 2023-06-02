@@ -362,14 +362,17 @@ li>a {
     /* background-color: #fffdfd; */
     margin: 2em;
     text-align: center;
+    border: solid black;
+    border-radius: 1em;
 }
 
 .segundo {
     margin: 2em;
-    width: 13em;
+    width: 400px;
     border: solid black;
     text-align: center;
     padding: 1em;
+    border-radius: 1em;
 }
 
 
